@@ -5,12 +5,14 @@ import Image from "next/image";
 export default function Homepage() {
   return (
     <Imagecontainer>
-      <Picture src={Me} alt="picture from me" />
+      <Picture>
+        <Image src={Me} alt="picture from me" />
+      </Picture>
     </Imagecontainer>
   );
 }
 
-const Picture = styled.image`
+const Picture = styled.span`
   width: 130px;
   height: 160px;
   border-top-left-radius: 40rem;
@@ -22,7 +24,7 @@ const Picture = styled.image`
   position: static;
   z-index: 2;
 `;
-const Imagecontainer = styled.div`
+const Imagecontainer = styled.span`
   display: flex;
   width: 20vh;
   height: 20vh;
