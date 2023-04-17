@@ -32,7 +32,7 @@ export default function Homepage() {
         bei der Arbeit für Erleichterung sorgen
       </Text>
 
-      <H3>Fähigkeiten und Skill's</H3>
+      <H3>Fähigkeiten und Skills</H3>
       <Section>
         <SkillsLeft>
           <H4>gelernter Komminikationselektroniker</H4>
