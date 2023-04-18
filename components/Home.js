@@ -72,6 +72,7 @@ const ImageWrap = styled(Image)`
   border-top-right-radius: 10rem;
   border-bottom-left-radius: 5rem;
   margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: 2rem;
   position: static;
 `;
@@ -80,12 +81,14 @@ const Text = styled.p`
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgb(16, 78, 129);
   margin-left: 2rem;
+  margin-right: 2rem;
 `;
 
 const Infos = styled.h2`
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgba(54, 164, 164, 0.811);
   margin-left: 1rem;
+  margin-right: 1rem;
   font-size: 1.3rem;
   text-align: center;
 `;
@@ -104,6 +107,7 @@ const Section = styled.section`
   font-size: 13px;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 1rem;
+  margin-right: 1rem;
   display: grid;
   grid-area: auto;
 `;
@@ -124,9 +128,11 @@ const H4 = styled.h4`
   color: cornflowerblue;
   font-size: 0.9rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 const Lists = styled.ul`
   font-size: 0.85rem;
   margin-left: 1rem;
+  margin-right: 1rem;
 `;
