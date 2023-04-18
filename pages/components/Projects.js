@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
-import InsulinApp from "../public/InsulinApp.png";
-import Voyager from "../public/Voyager.jpeg";
+import InsulinApp from "../../public/InsulinApp.png";
+import Voyager from "../../public/Voyager.jpeg";
 import { keyframes } from "styled-components";
 
 export default function Project() {

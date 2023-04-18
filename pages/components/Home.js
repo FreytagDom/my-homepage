@@ -1,4 +1,4 @@
-import Me from "../public/Me.jpg";
+import Me from "../../public/Me.jpg";
 import Image from "next/image";
 import styled from "styled-components";
 import Project from "./Projects";

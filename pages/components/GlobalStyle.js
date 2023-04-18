@@ -22,3 +22,6 @@ body {
        flex-direction: column;
     }}}
 `;
+export default function Gstyles() {
+  return;
+}
