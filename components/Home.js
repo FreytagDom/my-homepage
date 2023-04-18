@@ -110,6 +110,7 @@ const Section = styled.section`
   margin-right: 1rem;
   display: grid;
   grid-area: auto;
+  align-items: start;
 `;
 
 const SkillsLeft = styled.div`

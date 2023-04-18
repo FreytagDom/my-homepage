@@ -11,7 +11,7 @@ main {
 body {
     margin: 0;
     padding: 1rem;
-    padding-rigth: 2rem;
+    padding-right: 2rem;
    display: block;
     @media only screen and (min-device-width: 480px){
     gap: 4rem;
