@@ -12,7 +12,7 @@ export default function Home() {
         <link
           rel="apple-touch-icon"
           type="image/png"
-          href="/Img/DF2.png"
+          href="/DF2.png"
           sizes="180x180"
         />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
