@@ -29,8 +29,14 @@ export default function Project() {
 
 const IconWrap = styled(Image)`
   display: grid;
-  width: 10rem;
-  height: 10rem;
+  @media (max-width: 780px) {
+    width: 6rem;
+    height: 6rem;
+  }
+  @media (min-width: 781px) {
+    width: 10rem;
+    height: 10rem;
+  }
 `;
 
 const Projects = styled.span`
