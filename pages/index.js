@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Dominic Freytag</title>
         <meta name="description" content="Personal-Website-Dominic-Freytag" />
-        <meta name="description" content="Diese Seite enthält Informationen zu mir und meinen Projekten. "
+        <meta name="description" content="Diese Seite enthält Informationen zu mir und meinen Projekten. " />
         <link rel="icon" type="image/png" sizes="32x32" href="/DF3.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/DF3.png" />
         <link
