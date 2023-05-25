@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 import InsulinApp from "../public/InsulinApp.png";
-import online-shop from "../public/online-shop.png";
+import OnlineShop from "../public/OnlineShop.png";
 import { keyframes } from "styled-components";
 
 export default function Project() {
@@ -18,7 +18,7 @@ export default function Project() {
         </ProjectOne>
         <ProjectTwo>
           <Link href="https://e-commerce-hygraph-example.vercel.app/">
-            <IconWrap src={online-shop} alt="under construction" />
+            <IconWrap src={OnlineShop} alt="under construction" />
             <Text>e-commerce-example</Text>
           </Link>
         </ProjectTwo>
