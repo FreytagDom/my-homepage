@@ -49,9 +49,9 @@ const NavbarHead = styled.section`
   display: grid;
   top: 0;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
   height: 4rem;
-  z-index: 2;
+  z-index: 8;
   background-color: cadetblue;
   position: sticky;
 `;

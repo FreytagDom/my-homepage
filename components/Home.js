@@ -139,11 +139,12 @@ const Background = styled.div`
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
-  position: fixed;
+  position: relative;
   top: 0rem;
   left:0;
   bottom: 0;
   right: 0;
+  min-height: 50rem ;
   `;
 
 const Stars = styled.div` 

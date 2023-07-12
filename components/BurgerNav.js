@@ -31,6 +31,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  z-index: 8;
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #82ffff;
