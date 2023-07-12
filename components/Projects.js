@@ -113,9 +113,6 @@ const Wrapper =styled.article`
   height: 100vh;
   min-width: 360px;
   width: 100%;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   perspective: 1000px;
   perspective-origin: 50% 50%;
 
@@ -126,7 +123,6 @@ const Wrapper =styled.article`
   }
 }
 
-/* Fallback if the operatring system prefers reduced motion*/
 @media (prefers-reduced-motion) {
   .Wrapper {
     animation: scroll 800s linear infinite;
