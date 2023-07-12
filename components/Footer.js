@@ -12,4 +12,5 @@ const FooterLine = styled.footer`
   bottom: 5px;
   width: 100%;
   margin-left: 6px;
+  position: fixed;
 `;
