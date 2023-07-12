@@ -7,12 +7,12 @@ export const GlobalStyle = createGlobalStyle`
 }
 main {
     display: grid;
+ 
 }
 body {
     margin: 0;
-    padding: 1rem;
-    padding-right: 2rem;
    display: block;
+   background-color: aliceblue;
     @media only screen and (min-device-width: 480px){
     gap: 4rem;
     

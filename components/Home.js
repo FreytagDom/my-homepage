@@ -1,20 +1,21 @@
 import Me from "../public/Me.jpg";
 import Image from "next/image";
 import styled from "styled-components";
-import Project from "./Projects";
+import { keyframes } from "styled-components";
+
 
 export default function Homepage() {
   return (
     <>
+    <Background>
+<Moon src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" width={15} height={15} alt=""/>
+<Stars></Stars>
+<Twinkling></Twinkling>
+<Clouds></Clouds>
+    <PageWrapper>
+    <Headline>Dominic Freytag</Headline>
       <ImageWrap src={Me} alt="picture of me self" />
-      <Text>
-        Hier stelle ich meine Projekte vor und erzähle etwas über mich.
-        <b>
-          <i>
-            <u>Ich arbeite an diesen Projekten in meiner Freizeit.</u>
-          </i>
-        </b>
-      </Text>
+
       <Infos>Einige Infos zum mir</Infos>
       <Text>
         Ich habe 2006 meine Ausbildung zum Kommunikationselektroniker mit der
@@ -31,35 +32,8 @@ export default function Homepage() {
         Anwendung für jeden zu schaffen, die einem im Alltag unterstützen und
         bei der Arbeit für Erleichterung sorgen
       </Text>
-
-      <H3>Fähigkeiten und Skills</H3>
-      <Section>
-        <SkillsLeft>
-          <H4>gelernter Komminikationselektroniker</H4>
-          <Lists>
-            <li>löten</li>
-            <li>bonding</li>
-            <li>testen</li>
-            <li>Fehlersuche</li>
-            <li>Reparatur</li>
-            <li>Dokumentation</li>
-          </Lists>
-        </SkillsLeft>
-        <Skills>
-          <H4>Bootcampweiterbildung zum Web-Developer</H4>
-          <Lists>
-            <li>html</li>
-            <li>JavaScript</li>
-            <li>CSS</li>
-            <li>React</li>
-            <li>Next</li>
-            <li>Styled-Components</li>
-            <li>MongoDB</li>
-            <li>mongoose</li>
-          </Lists>
-        </Skills>
-      </Section>
-      <Project />
+      </PageWrapper>
+      </Background>
     </>
   );
 }
@@ -71,17 +45,21 @@ const ImageWrap = styled(Image)`
   border-bottom-right-radius: 40rem;
   border-top-right-radius: 10rem;
   border-bottom-left-radius: 5rem;
-  margin-left: 1rem;
+  margin-left: 3rem;
   margin-right: 1rem;
-  margin-top: 2rem;
-  position: static;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: sticky;
+  z-index: 8;
 `;
 
 const Text = styled.p`
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: rgb(16, 78, 129);
+  color: rgb(18, 178, 129);
   margin-left: 2rem;
   margin-right: 2rem;
+  z-index: 8;
+  position: sticky;
 `;
 
 const Infos = styled.h2`
@@ -91,49 +69,135 @@ const Infos = styled.h2`
   margin-right: 1rem;
   font-size: 1.3rem;
   text-align: center;
+  z-index: 8;
+  position: sticky;
 `;
 
-const H3 = styled.h3`
-  text-decoration: underline;
-  font-size: 1rem;
-  color: midnightblue;
-  font-family: Georgia, "Times New Roman", Times, serif;
+const PageWrapper = styled.span`
+  padding: 1rem;
+    padding-right: 2rem;  
+`;
+
+const hue = keyframes`
+ from {
+   -webkit-filter: hue-rotate(0deg);
+ }
+ to {
+   -webkit-filter: hue-rotate(-360deg);
+ }
+`;
+
+const Headline = styled.h1`
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: ${hue} 10s infinite linear;
+  color: purple;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
+  z-index: 3;
+  position: relative;
   display: grid;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 5rem;
 `;
 
-const Section = styled.section`
-  color: midnightblue;
-  font-size: 13px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  display: grid;
-  grid-area: auto;
-  align-items: start;
-`;
+const Background = styled.div`
+  
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
 
-const SkillsLeft = styled.div`
-  display: grid;
-  justify-content: space-evenly;
-  grid-column: 1;
-`;
+@-moz-keyframes move-background {    
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
 
-const Skills = styled.div`
-  display: grid;
-  justify-content: space-evenly;
-  grid-column: 2;
-`;
+    @-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+  position: fixed;
+  top: 0rem;
+  left:0;
+  bottom: 0;
+  right: 0;
+  `;
 
-const H4 = styled.h4`
-  color: cornflowerblue;
-  font-size: 0.9rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-`;
+const Stars = styled.div` 
+  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: block;
+     z-index: 0;
+ `;
+ 
+ const Twinkling = styled.div`
+   width:10000px;
+   height: 100%;
+   background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+   background-size: 1000px 1000px;
+     position: absolute;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     z-index: 2;
+     
+     -moz-animation:move-background 70s linear infinite;
+   -ms-animation:move-background 70s linear infinite;
+   -o-animation:move-background 70s linear infinite;
+   -webkit-animation:move-background 70s linear infinite;
+   animation:move-background 70s linear infinite;
+   `;
+ 
+ const Clouds = styled.div`
+   width:10000px;
+   height: 100%;
+   background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+   background-size: 1000px 1000px;
+     position: absolute;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     z-index: 3;
+ 
+    -moz-animation:move-background 150s linear infinite;
+   -ms-animation:move-background 150s linear infinite;
+   -o-animation:move-background 150s linear infinite;
+   -webkit-animation:move-background 150s linear infinite;
+   animation:move-background 150s linear infinite;
+ `;
 
-const Lists = styled.ul`
-  font-size: 0.85rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-`;
+ const Moon = styled(Image)`
+   height: 15rem;
+   width: 15rem;
+   position: absolute;
+   z-index: 3;
+   right: 2rem;
+   top: 5rem;
+ `;
