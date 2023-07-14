@@ -110,10 +110,10 @@ const Wrapper =styled.article`
   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
     #111111;
   color: #eee;
-  height: 100vh;
-  min-width: 360px;
+  height: 100rem;
+  min-width: 30rem;
   width: 100%;
-  perspective: 1000px;
+  perspective: 500rem;
   perspective-origin: 50% 50%;
 
 

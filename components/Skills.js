@@ -7,6 +7,7 @@ export default function SkillList() {
     return (
         <>
     <H3>Fähigkeiten und Skills</H3>
+     
     <Section>
       <SkillsLeft>
         <H4>gelernter Komminikationselektroniker</H4>
@@ -32,9 +33,9 @@ export default function SkillList() {
           <li>mongoose</li>
         </Lists>
       </Skills>
-      <MyComponent/>
     </Section>
-    </>
+    {/* <MyComponent /> */}
+        </>
     
     )
 }
@@ -53,7 +54,7 @@ const H3 = styled.h3`
 
 const Section = styled.section`
   color: antiquewhite;
-  font-size: 0.6rem;
+  font-size: 0.4rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -61,8 +62,7 @@ const Section = styled.section`
   display: grid;
   grid-area: auto;
   align-items: start;
-
-`;
+  `;
 
 const SkillsLeft = styled.div`
   display: grid;

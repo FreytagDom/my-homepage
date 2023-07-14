@@ -6,7 +6,7 @@ import { keyframes } from "styled-components";
 export default function MyComponent() {
     return (
       <>
-      <Body>
+      {/* <Body> */}
           <Circle1 />
           <Circle2 />
           <Circle3 />
@@ -47,16 +47,20 @@ export default function MyComponent() {
           <Circle38 />
           <Circle39 />
           <Circle40 />
-        </Body>
+        {/* </Body> */}
       </>
     );
   };
 
   
-  const Body = styled.body`
-  margin: 0;
+  const Body = styled.article`
+  /* margin: 0; */
   overflow: hidden;
   background: #000;
+  height: 100rem;
+  min-width: 10rem;
+  width: 100%;
+  perspective: 500rem;
   `;
 
 const screenAnimation = keyframes`
@@ -97,6 +101,7 @@ const Circle = styled.i`
 const Circle1 = styled(Circle)`
   top: 20px;
   left: 30px;
+ 
   background: radial-gradient(
     center,
     ellipse cover,
