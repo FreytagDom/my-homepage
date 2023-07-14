@@ -114,14 +114,14 @@ const Background = styled.div`
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
-@-webkit-keyframes move-background {
+/* @-webkit-keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
   }
   to { 
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
-}
+} */
 
 /* @-moz-keyframes move-background {    
   from {
