@@ -76,7 +76,7 @@ const Infos = styled.h2`
 
 const PageWrapper = styled.span`
   padding: 1rem;
-    padding-right: 2rem;  
+  padding-right: 2rem;  
 `;
 
 const hue = keyframes`
@@ -123,7 +123,7 @@ const Background = styled.div`
   }
 }
 
-@-moz-keyframes move-background {    
+/* @-moz-keyframes move-background {    
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
   }
@@ -139,13 +139,14 @@ const Background = styled.div`
   to { 
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
-}
+} */
   position: relative;
   top: 0rem;
   left:0;
   bottom: 0;
   right: 0;
   min-height: 50rem ;
+  overflow: hidden;
   `;
 
 const Stars = styled.div` 
@@ -156,7 +157,7 @@ const Stars = styled.div`
    left: 0;
    right: 0;
    display: block;
-     z-index: 0;
+   z-index: 0;
  `;
  
  const Twinkling = styled.div`
@@ -164,11 +165,11 @@ const Stars = styled.div`
    height: 100%;
    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
    background-size: 1000px 1000px;
-     position: absolute;
-     right: 0;
-     top: 0;
-     bottom: 0;
-     z-index: 2;
+   position: absolute;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: 2;
      
      -moz-animation:move-background 70s linear infinite;
    -ms-animation:move-background 70s linear infinite;
@@ -182,11 +183,11 @@ const Stars = styled.div`
    height: 100%;
    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
    background-size: 1000px 1000px;
-     position: absolute;
-     right: 0;
-     top: 0;
-     bottom: 0;
-     z-index: 3;
+   position: absolute;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: 3;
  
     -moz-animation:move-background 150s linear infinite;
    -ms-animation:move-background 150s linear infinite;
@@ -199,13 +200,7 @@ const Stars = styled.div`
    position: absolute;
    z-index: 3;
    right: 2rem;
-   top: 5rem;
-   @media (max-width: 780px) {
-    width: 9rem;
-    height: 9rem;
-  }
-  @media (min-width: 781px) {
-   height: 15rem;
-   width: 15rem;
-  }
- `;
+   top: 3rem;
+   width: 9rem;
+   height: 9rem;
+   `;
