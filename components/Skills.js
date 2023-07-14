@@ -1,13 +1,11 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
+import MyComponent from "./SkillBackground/SkillsBackground"
 
 export default function SkillList() {
 
     return (
         <>
-        <Bg></Bg>
-        <Bg2></Bg2>
-        <Bg3></Bg3>
     <H3>Fähigkeiten und Skills</H3>
     <Section>
       <SkillsLeft>
@@ -34,6 +32,7 @@ export default function SkillList() {
           <li>mongoose</li>
         </Lists>
       </Skills>
+      <MyComponent/>
     </Section>
     </>
     
@@ -44,22 +43,25 @@ export default function SkillList() {
 
 const H3 = styled.h3`
   text-decoration: underline;
-  font-size: 1rem;
-  color: midnightblue;
+  font-size: 1.5rem;
+  color: greenyellow;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   display: grid;
+  margin-top: 2rem;
 `;
 
 const Section = styled.section`
-  color: midnightblue;
-  font-size: 13px;
+  color: antiquewhite;
+  font-size: 0.6rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-top: 6rem;
   display: grid;
   grid-area: auto;
   align-items: start;
+
 `;
 
 const SkillsLeft = styled.div`
@@ -79,6 +81,7 @@ const H4 = styled.h4`
   font-size: 0.9rem;
   margin-left: 1rem;
   margin-right: 1rem;
+color: white;
 `;
 
 const Lists = styled.ul`
@@ -86,51 +89,3 @@ const Lists = styled.ul`
   margin-left: 1rem;
   margin-right: 1rem;
 `;
-
-const Bg = styled.div`
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
-  @keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
-}
-  `;
-
-
-const Bg2 = styled.div`
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
-  @keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
-}
-`;
-
-const Bg3 = styled.div`
-  animation-duration:5s;
-  @keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
-}
-`;
-
-
