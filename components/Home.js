@@ -174,11 +174,11 @@ const Stars = styled(Image)`
    bottom: 0;
    z-index: 2;
      
-     -moz-animation:move-background 40s linear infinite;
-   -ms-animation:move-background 40s linear infinite;
-   -o-animation:move-background 40s linear infinite;
-   -webkit-animation:move-background 40s linear infinite;
-   animation:move-background 40s linear infinite;
+     -moz-animation:move-background 20s linear infinite;
+   -ms-animation:move-background 20s linear infinite;
+   -o-animation:move-background 20s linear infinite;
+   -webkit-animation:move-background 20s linear infinite;
+   animation:move-background 20s linear infinite;
    `;
  
  const Clouds = styled(Image)`
