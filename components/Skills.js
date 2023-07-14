@@ -74,6 +74,15 @@ const Skills = styled.div`
   display: grid;
   justify-content: space-evenly;
   grid-column: 2;
+  @media only screen and (min-device-width: 480px) {
+    grid-column: 2;
+     }
+  @media (max-width: 600px) {
+     margin-top: 2rem;
+      grid-column: 1;
+      grid-row: 2;
+    }
+  
 `;
 
 const H4 = styled.h4`
@@ -81,7 +90,7 @@ const H4 = styled.h4`
   font-size: 0.9rem;
   margin-left: 1rem;
   margin-right: 1rem;
-color: white;
+  color: white;
 `;
 
 const Lists = styled.ul`
