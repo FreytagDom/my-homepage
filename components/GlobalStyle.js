@@ -12,7 +12,7 @@ main {
 body {
     margin: 0;
    display: block;
-   background-color: aliceblue;
+   background-color: black;
     @media only screen and (min-device-width: 480px){
     gap: 4rem;
     
