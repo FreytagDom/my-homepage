@@ -1,5 +1,8 @@
 import Me from "../public/Me.jpg";
 import MoonPicture from "../public/MoonPicture.png"
+import CloudsRepeat from "../public/CloudsRepeat.png"
+import Stras from "../public/Stars.png"
+import Twinkl from "../public/Twinkl.png"
 import Image from "next/image";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
@@ -12,7 +15,7 @@ export default function Homepage() {
 <Moon src={MoonPicture} alt="moon"/>
 <Stars></Stars>
 <Twinkling></Twinkling>
-<Clouds></Clouds>
+<Clouds src={CloudsRepeat}  ></Clouds>
     <PageWrapper>
     <Headline>Dominic Freytag</Headline>
       <ImageWrap src={Me} alt="picture of me self" />
@@ -114,14 +117,14 @@ const Background = styled.div`
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
-@-webkit-keyframes move-background {
+/* @-webkit-keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
   }
   to { 
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
-}
+} */
 
 /* @-moz-keyframes move-background {    
   from {
@@ -178,10 +181,10 @@ const Stars = styled.div`
    animation:move-background 70s linear infinite;
    `;
  
- const Clouds = styled.div`
-   width:10000px;
-   height: 100%;
-   background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+ const Clouds = styled(Image)`
+   width:1800px;
+   height: 1080px;
+   background: transparent  repeat;
    background-size: 1000px 1000px;
    position: absolute;
    right: 0;
