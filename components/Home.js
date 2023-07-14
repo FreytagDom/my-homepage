@@ -165,7 +165,7 @@ const Stars = styled(Image)`
  
  const Twinkling = styled(Image)`
    width: 1800px;
-   height: 100%;
+   height: 1800px;
    background: transparent  repeat;
    background-size: 1000px 1000px;
    position: absolute;
@@ -174,16 +174,16 @@ const Stars = styled(Image)`
    bottom: 0;
    z-index: 2;
      
-     -moz-animation:move-background 70s linear infinite;
-   -ms-animation:move-background 70s linear infinite;
-   -o-animation:move-background 70s linear infinite;
-   -webkit-animation:move-background 70s linear infinite;
-   animation:move-background 70s linear infinite;
+     -moz-animation:move-background 20s linear infinite;
+   -ms-animation:move-background 20s linear infinite;
+   -o-animation:move-background 20s linear infinite;
+   -webkit-animation:move-background 20s linear infinite;
+   animation:move-background 20s linear infinite;
    `;
  
  const Clouds = styled(Image)`
-   width: 1800px;
-   height: 1080px;
+   width: 4000px;
+   height: 600px;
    background: transparent  repeat;
    background-size: 1000px 1000px;
    position: absolute;
@@ -192,11 +192,11 @@ const Stars = styled(Image)`
    bottom: 0;
    z-index: 3;
  
-    -moz-animation:move-background 150s linear infinite;
-   -ms-animation:move-background 150s linear infinite;
-   -o-animation:move-background 150s linear infinite;
-   -webkit-animation:move-background 150s linear infinite;
-   animation:move-background 150s linear infinite;
+    -moz-animation:move-background 100s linear infinite;
+   -ms-animation:move-background 100s linear infinite;
+   -o-animation:move-background 100s linear infinite;
+   -webkit-animation:move-background 100s linear infinite;
+   animation:move-background 100s linear infinite;
  `;
 
  const Moon = styled(Image)`
