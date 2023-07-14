@@ -1,4 +1,5 @@
 import Me from "../public/Me.jpg";
+import MoonPicture from "../public/MoonPicture.png"
 import Image from "next/image";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
@@ -8,7 +9,7 @@ export default function Homepage() {
   return (
     <>
     <Background>
-<Moon src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" width={15} height={15} alt=""/>
+<Moon src={MoonPicture} alt="moon"/>
 <Stars></Stars>
 <Twinkling></Twinkling>
 <Clouds></Clouds>
@@ -195,10 +196,16 @@ const Stars = styled.div`
  `;
 
  const Moon = styled(Image)`
-   height: 15rem;
-   width: 15rem;
    position: absolute;
    z-index: 3;
    right: 2rem;
    top: 5rem;
+   @media (max-width: 780px) {
+    width: 9rem;
+    height: 9rem;
+  }
+  @media (min-width: 781px) {
+   height: 15rem;
+   width: 15rem;
+  }
  `;
