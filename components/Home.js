@@ -15,7 +15,7 @@ export default function Homepage() {
 <Moon src={MoonPicture} alt="moon"/>
 <Stars src={Stras} alt="stars" ></Stars>
 <Twinkling src={Twinkl} alt="twinkling" ></Twinkling>
-<Clouds src={CloudsRepeat}  ></Clouds>
+<Clouds src={CloudsRepeat} ></Clouds>
     <PageWrapper>
     <Headline>Dominic Freytag</Headline>
       <ImageWrap src={Me} alt="picture of me self" />
@@ -183,14 +183,15 @@ const Stars = styled(Image)`
  
  const Clouds = styled(Image)`
    width: 4000px;
-   height: 600px;
-   background: transparent  repeat;
+   height: 950px;
+   background: transparent, repeat;
    background-size: 1000px 1000px;
    position: absolute;
    right: 0;
    top: 0;
    bottom: 0;
    z-index: 3;
+   opacity: 0.9;
  
     -moz-animation:move-background 100s linear infinite;
    -ms-animation:move-background 100s linear infinite;
