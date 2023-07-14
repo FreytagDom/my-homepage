@@ -111,7 +111,7 @@ const Wrapper =styled.article`
     #111111;
   color: #eee;
   height: 100rem;
-  min-width: 30rem;
+  /* min-width: 30rem; */
   width: 100%;
   perspective: 500rem;
   perspective-origin: 50% 50%;
