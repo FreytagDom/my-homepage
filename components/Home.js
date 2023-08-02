@@ -1,4 +1,4 @@
-import Me from "../public/Me.jpg";
+import Me1 from "../public/Me1.png";
 import MoonPicture from "../public/MoonPicture.png"
 import CloudsRepeat from "../public/CloudsRepeat.png"
 import Stras from "../public/Stars.png"
@@ -6,7 +6,6 @@ import Twinkl from "../public/Twinkl.png"
 import Image from "next/image";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-
 
 export default function Homepage() {
   return (
@@ -18,7 +17,7 @@ export default function Homepage() {
 <Clouds src={CloudsRepeat} ></Clouds>
     <PageWrapper>
     <Headline>Dominic Freytag</Headline>
-      <ImageWrap src={Me} alt="picture of me self" />
+      <ImageWrap src={Me1} alt="picture of me self" />
 
       <Infos>Einige Infos zum mir</Infos>
       <Text>
@@ -117,32 +116,6 @@ const Background = styled.div`
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
-/* @-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to { 
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-} */
-
-/* @-moz-keyframes move-background {    
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to { 
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
-
-    @-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to { 
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-} */
   position: relative;
   top: 0rem;
   left:0;
