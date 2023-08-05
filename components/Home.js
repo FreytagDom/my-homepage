@@ -19,7 +19,7 @@ export default function Homepage() {
     <Headline>Dominic Freytag</Headline>
       <ImageWrap src={Me1} alt="picture of me self" />
 
-      <Infos>Einige Infos zum mir</Infos>
+      <Infos>Einige Infos zu mir</Infos>
       <Text>
         Ich habe 2006 meine Ausbildung zum Kommunikationselektroniker mit der
         Fachrichtung Informationstechnik erfolgreich abgeschlossen. Im Anschluss
