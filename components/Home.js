@@ -18,22 +18,14 @@ export default function Homepage() {
     <PageWrapper>
     <Headline>Dominic Freytag</Headline>
       <ImageWrap src={Me1} alt="picture of me self" />
-
       <Infos>Einige Infos zu mir</Infos>
       <Text>
-        Ich habe 2006 meine Ausbildung zum Kommunikationselektroniker mit der
-        Fachrichtung Informationstechnik erfolgreich abgeschlossen. Im Anschluss
-        habe ich noch 2 Jahre bei der Firma Erfahrungen in der Produktion
-        gesammelt ehe ich bei, einer Marktführenden Firma in der Pneumatik
-        Branche, weitere Erfahrungen im Pneumatik Bereich dazugewonnen habe. Auf
-        Grund der Marktentwicklungen habe ich dann immer wieder neue Arbeit
-        suchen müssen. Mir war es dabei wichtig in großen Unternehmen zu
-        arbeiten damit ich möglichst viele verschieden Abläufe und Prozesse
-        kennen lerne. Dabei hat mich schon immer die Entwicklung sowie
-        Softwareanwendung interessiert was mich dazu bewogen hat eine
-        Weiterbildung zum Softwareentwickler zu machen. Mein Ziel ist es smarte
-        Anwendung für jeden zu schaffen, die einem im Alltag unterstützen und
-        bei der Arbeit für Erleichterung sorgen
+      Ich habe 2006 meine Ausbildung zum Kommunikationselektroniker mit der Fachrichtung Informationstechnik erfolgreich abgeschlossen. 
+      Im Anschluss habe ich noch 2 Jahre bei der Firma Erfahrungen in der Produktion gesammelt, ehe ich bei einer Marktführenden Firma in der Pneumatik Branche, weitere Erfahrungen im Pneumatik Bereich dazugewonnen habe. 
+      Aufgrund der Marktentwicklungen habe ich dann immer wieder neue Arbeit suchen müssen. 
+      Mir war es dabei wichtig, in großen Unternehmen zu arbeiten, damit ich möglichst viele verschiedenen Abläufe und Prozesse kennenlerne. 
+      Dabei hat mich schon immer die Entwicklung sowie Softwareanwendung interessiert, was mich dazu bewogen hat eine Weiterbildung zum Softwareentwickler zu machen. 
+      Mein Ziel ist es smarte Anwendung für jeden zu schaffen, die einem im Alltag unterstützen und bei der Arbeit für Erleichterung sorgen.
       </Text>
       </PageWrapper>
       </Background>
