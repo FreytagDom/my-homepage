@@ -2,7 +2,6 @@ import MyComponent from "@/components/SkillBackground/SkillsBackground";
 import SkillList from "@/components/Skills";
 import styled from "styled-components";
 
-
 export default function SkillLists () {
 
     return (

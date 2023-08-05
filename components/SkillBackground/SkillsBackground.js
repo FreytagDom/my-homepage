@@ -1,12 +1,9 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
-
-
 export default function MyComponent() {
     return (
       <>
-      {/* <Body> */}
           <Circle1 />
           <Circle2 />
           <Circle3 />
@@ -47,21 +44,10 @@ export default function MyComponent() {
           <Circle38 />
           <Circle39 />
           <Circle40 />
-        {/* </Body> */}
       </>
     );
   };
 
-  
-  const Body = styled.article`
-  /* margin: 0; */
-  overflow: hidden;
-  background: #000;
-  height: 100rem;
-  min-width: 10rem;
-  width: 100%;
-  perspective: 500rem;
-  `;
 
 const screenAnimation = keyframes`
 

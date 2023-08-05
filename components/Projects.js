@@ -18,8 +18,8 @@ export default function Project() {
               textDecoration: 'underline',
             }}>My first own Web-App</Text>
           </Links>
-          <Text> Dies ist meine erste WebApp welche ich bei der Weiterbildung erstellt habe.
-              Sie dient Diabetikern zum errechnen und tracken ihrer Insulin-Einheiten die sie sich spritzen müssen.</Text>
+          <Text> Dies ist meine erste WebApp, welche ich bei der Weiterbildung erstellt habe.
+              Sie dient Diabetikern zum errechnen und tracken ihrer Insulin-Einheiten die sie sich spritzen müssen. Sie richtet sich in erster Line an Kinder. </Text>
         </ProjectOne>
         <ProjectTwo>
           <Links href="https://e-commerce-hygraph-example.vercel.app/">
@@ -110,7 +110,8 @@ const Wrapper =styled.article`
   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
     #111111;
   color: #eee;
-  height: 100rem;
+  min-height: 120%;
+  height: max-content;
   /* min-width: 30rem; */
   width: 100%;
   perspective: 500rem;
