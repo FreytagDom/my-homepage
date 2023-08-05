@@ -53,7 +53,7 @@ const ImageWrap = styled(Image)`
   margin-top: 3rem;
   margin-bottom: 3rem;
   position: sticky;
-  z-index: 8;
+  z-index: 3;
 `;
 
 const Text = styled.p`
