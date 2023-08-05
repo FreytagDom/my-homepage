@@ -36,7 +36,7 @@ display: grid;
 const Email = styled.div`
 padding-left: 3rem;
 color: aquamarine;
-font-size: 1rem;
+font-size: 0.6rem;
 color: aliceblue;
 z-index: 3;
 `;
