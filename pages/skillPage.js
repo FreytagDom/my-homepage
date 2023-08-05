@@ -5,12 +5,12 @@ import styled from "styled-components";
 export default function SkillLists () {
 
     return (
-<PageWrapper>
+    <PageWrapper>
         <Body>
         <SkillList />
         <MyComponent />
         </Body>
-        </PageWrapper>
+    </PageWrapper>
     )
 }
 
@@ -23,8 +23,7 @@ const Body = styled.span`
 margin: 0; 
 overflow: hidden;
 background: #000;
-height: 100rem;
+min-height: 60rem;
 min-width: 10rem;
-/* width: 100%; */
 perspective: 500rem;
 `;

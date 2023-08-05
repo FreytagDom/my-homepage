@@ -73,8 +73,6 @@ to {
 }
 `;
 
-
-
 const Circle = styled.i`
   position: absolute;
   width: 120px;

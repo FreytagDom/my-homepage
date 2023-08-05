@@ -5,7 +5,6 @@ export default function Footer() {
   return (
   <>
   <FooterLine>Created by FreyDom 2023
-
   <Contact/>
   </FooterLine>
   </>)
@@ -21,4 +20,6 @@ const FooterLine = styled.footer`
   width: 100%;
   margin-left: 6px;
   position: fixed;
+  z-index: 4;
+  opacity: 0.4;
 `;
