@@ -54,6 +54,7 @@ const Email =styled(Image)`
  width: 1.5rem;
  height:  1.5rem;
  margin-left: 0.5rem;
+
 `;
 
 const GitHub = styled(Image)`
