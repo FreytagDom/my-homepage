@@ -1,7 +1,15 @@
 import styled from "styled-components";
+import Contact from "./Contact";
 
 export default function Footer() {
-  return <FooterLine>Created by FreyDom 2023</FooterLine>;
+  return (
+  <>
+  <FooterLine>Created by FreyDom 2023
+
+  <Contact/>
+  </FooterLine>
+  </>)
+  ;
 }
 
 const FooterLine = styled.footer`

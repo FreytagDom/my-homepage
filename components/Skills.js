@@ -1,13 +1,9 @@
 import styled from "styled-components";
-import { keyframes } from "styled-components";
-import MyComponent from "./SkillBackground/SkillsBackground"
 
 export default function SkillList() {
-
     return (
         <>
     <H3>Fähigkeiten und Skills</H3>
-     
     <Section>
       <SkillsLeft>
         <H4>gelernter Komminikationselektroniker</H4>
@@ -34,12 +30,9 @@ export default function SkillList() {
         </Lists>
       </Skills>
     </Section>
-    {/* <MyComponent /> */}
         </>
-    
     )
 }
-
 
 
 const H3 = styled.h3`
