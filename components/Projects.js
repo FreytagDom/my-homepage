@@ -12,7 +12,7 @@ export default function Project() {
       <H3>Meine Projekte</H3>
       <Projects>
         <ProjectOne>
-          <Links href="https://insulinapp.vercel.app/">
+          <Links href="https://insulinapp.vercel.app/" target="_blank" rel="noopener noreferrer">
             <IconWrap src={InsulinApp} alt="InsulinApp" style={{borderRadius: '50%'}}/>
             <Text style={{
               textDecoration: 'underline',
@@ -22,7 +22,7 @@ export default function Project() {
               Sie dient Diabetikern zum errechnen und tracken ihrer Insulin-Einheiten die sie sich spritzen müssen. Sie richtet sich in erster Line an Kinder. </Text>
         </ProjectOne>
         <ProjectTwo>
-          <Links href="https://e-commerce-hygraph-example.vercel.app/">
+          <Links href="https://e-commerce-hygraph-example.vercel.app/" target="_blank" rel="noopener noreferrer">
             <IconWrap src={OnlineShop} alt="under construction" />
             <Text style={{
               textDecoration: 'underline',
