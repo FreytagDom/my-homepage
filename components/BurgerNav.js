@@ -23,6 +23,12 @@ export default function RightNav({ open }) {
         </LinkWrapper>
       </li>
 
+      {/* <li>
+        <LinkWrapper href="/contact" passHref>
+          <Tags>Contact</Tags>
+        </LinkWrapper>
+      </li> */}
+
     </Ul>
   );
 }
