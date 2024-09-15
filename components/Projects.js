@@ -13,7 +13,7 @@ export default function Project() {
       <Projects>
         <ProjectOne>
           <Links href="https://insulinapp.vercel.app/">
-            <IconWrap src={InsulinApp} alt="InsulinApp" />
+            <IconWrap src={InsulinApp} alt="InsulinApp" style={{borderRadius: '50%'}}/>
             <Text style={{
               textDecoration: 'underline',
             }}>My first own Web-App</Text>
@@ -106,7 +106,7 @@ const H3 = styled.h3`
 
 
 const Wrapper =styled.article`
-  animation: scroll 100s linear infinite;
+  animation: scroll 300s linear infinite;
   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
     #111111;
   color: #eee;
